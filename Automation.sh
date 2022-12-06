@@ -119,6 +119,6 @@ else
     echo "cron File doesnt exists so creating one"
     sudo touch $cronfile
     sudo tee -a $cronfile > /dev/null <<EOT
-    1 * * * * /home/ubuntu/meena/automation2.sh
+    0 1 * * * /home/ubuntu/meena/automation2.sh
 EOT
 fi
